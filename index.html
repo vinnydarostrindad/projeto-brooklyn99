@@ -8,42 +8,65 @@
 
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <main>
         <section class="carrossel">
-            <img src="src/img/brooklyn-group1.jpg" alt="Grupo do Brooklyn 99" class="aparecer">
-            <img src="src/img/jake-captain.jpg" alt="Jake Peralta e o Capitão Ray trocando olhares">
-            <img src="src/img/jake-amy.webp" alt="Jake Peralta e Amy Santiago">
-            <img src="src/img/brooklyn-group2.jpg" alt="Grupo do Brooklyn 99 com o Jake Peralta quebrando a janela">
-            <img src="src/img/jake.webp" alt="Jake Peralta no telefone">
-            <img src="src/img/jake-charles.jpg" alt="Jake Peralta e Charles Boyle apontanto para algo">
+            <picture id="img1" class="aparecer">
+                <source media="(min-width: 790px)" srcset="src/img/brooklyn-group1.jpg" type="image/jpg">
+                <img src="src/img/brooklyn-group1-p.jpg" alt="Grupo do Brooklyn 99">
+            </picture>
+            <picture id="img2">
+                <source media="(min-width: 790px)" srcset="src/img/jake-captain.jpg" type="image/jpg">
+                <img src="src/img/jake-captain-p.jpg" alt="Jake Peralta e o Capitão Ray trocando olhares">
+            </picture>
+            <picture id="img3">
+                <source media="(min-width: 790px)" srcset="src/img/jake-amy.webp" type="image/jpg">
+                <img src="src/img/jake-amy-p.webp" alt="Jake Peralta e Amy Santiago">
+            </picture>
+            <picture id="img4">
+                <source media="(min-width: 790px)" srcset="src/img/brooklyn-group2.jpg" type="image/jpg">
+                <img src="src/img/brooklyn-group2-p.jpg" alt="Grupo do Brooklyn 99 com o Jake Peralta quebrando a janela">
+            </picture>
+            <picture id="img5">
+                <source media="(min-width: 790px)" srcset="src/img/jake.webp" type="image/jpg">
+                <img src="src/img/jake-p.webp" alt="Jake Peralta no telefone">
+            </picture>
+            <picture id="img6">
+                <source media="(min-width: 790px)" srcset="src/img/jake-charles.jpg" type="image/jpg">
+                <img src="src/img/jake-charles-p.jpg" alt="Jake Peralta e Charles Boyle apontanto para algo">
+            </picture>
         </section>
         <section class="conteudo">
-            <div class="informacoes">
-                <h1>BROOKLYN <span>NINE-NINE</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, praesentium culpa quia dolorum asperiores consectetur, officia recusandae reiciendis dicta ratione ex laboriosam placeat. Repellendus accusamus eveniet fuga exercitationem, facilis voluptas?</p>
-            </div>
-            <div class="botoes-carrossel">
-                <button class="botao"></button>
-                <button class="botao"></button>
-                <button class="botao"></button>
-                <button class="botao"></button>
-                <button class="botao"></button>
-            </div>
+            <article>
+                <div class="informacoes">
+                    <h1><img src="src/img/99-logo.avif" alt="Brooklyn Nine-Nine"></h1>
+                    <p>Brooklyn Nine-Nine é uma série de comédia policial criada por Dan Goor e Michael Schur. A série gira em torno de Jake Peralta, um imaturo, mas talentoso, detetive da polícia de Nova York na fictícia 99ª Delegacia do Brooklyn, que muitas vezes entra em conflito com seu novo comandante, o sério e severo capitão Raymond Holt.</p>
+                </div>
+                <div class="botoes-carrossel">
+                    <button class="botao selecionado" id="btn1" onclick="trocarFundo(this)"></button>
+                    <button class="botao" id="btn2" onclick="trocarFundo(this)"></button>
+                    <button class="botao" id="btn3" onclick="trocarFundo(this)"></button>
+                    <button class="botao" id="btn4" onclick="trocarFundo(this)"></button>
+                    <button class="botao" id="btn5" onclick="trocarFundo(this)"></button>
+                    <button class="botao" id="btn6" onclick="trocarFundo(this)"></button>
+                </div>
+            </article>
+            <aside class="menu">
+                <ul>
+                    <li>
+                        <a href="https://github.com/vinnydarostrindad" target="_blank" rel="external"><img src="src/img/github.png" alt="GitHub" class="icone"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vinny-daros-2b4a70263/" target="_blank" rel="external"><img src="src/img/linkedin.png" alt="LinkedIn" class="icone"></a>
+                    </li>
+                </ul>
+            </aside>
         </section>
-
-        <aside class="menu-lateral">
-            <ul>
-                <li>
-                    <a href="#"><img src="" alt="GitHub" class="icone"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="" alt="LinkedIn" class="icone"></a>
-                </li>
-            </ul>
-        </aside>
     </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 </html>
